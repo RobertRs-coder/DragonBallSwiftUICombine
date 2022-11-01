@@ -76,6 +76,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230A472B29119A67007C726D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				230A472D29119A7E007C726D /* Services */,
+				230A472C29119A6C007C726D /* Tools */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		230A472C29119A6C007C726D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				230A473229119ACD007C726D /* CoreData */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		230A472D29119A7E007C726D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		230A472E29119A8A007C726D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				230A473329119AE8007C726D /* Root */,
+				230A472F29119A8E007C726D /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		230A472F29119A8E007C726D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				230A473629119B13007C726D /* Views */,
+				230A473729119B1A007C726D /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		230A473029119A9D007C726D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		230A473129119AA3007C726D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2325E0B0291198BF002BF195 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		230A473229119ACD007C726D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2325E0A9291198BE002BF195 /* Persistence.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		230A473329119AE8007C726D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				230A473429119AEE007C726D /* Views */,
+				230A473529119AF6007C726D /* ViewModels */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		230A473429119AEE007C726D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		230A473529119AF6007C726D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		230A473629119B13007C726D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		230A473729119B1A007C726D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		2325E09B291198BE002BF195 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +202,11 @@
 		2325E0A6291198BE002BF195 /* DragonBallSwiftUICombine */ = {
 			isa = PBXGroup;
 			children = (
-				2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */,
-				2325E0A9291198BE002BF195 /* Persistence.swift */,
+				230A473029119A9D007C726D /* App */,
+				230A472B29119A67007C726D /* Domain */,
+				230A472E29119A8A007C726D /* UI */,
+				230A473129119AA3007C726D /* Resources */,
 				2325E0AE291198BE002BF195 /* ContentView.swift */,
-				2325E0B0291198BF002BF195 /* Assets.xcassets */,
 				2325E0B2291198BF002BF195 /* DragonBallSwiftUICombine.entitlements */,
 				2325E0AB291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld */,
 				2325E0B3291198BF002BF195 /* Preview Content */,
