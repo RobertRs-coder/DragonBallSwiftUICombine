@@ -85,6 +85,23 @@ struct LoginView: View {
                             animationAmount = 2
                         }
                 )
+                
+                Spacer ()
+                
+                HStack{
+                    Text("You are not register")
+                        .foregroundColor(.white)
+                        .bold()
+                    
+                    Button {
+                        //TODO: Register into RegisterView
+                    } label: {
+                        Text("Register")
+                            .foregroundColor(.blue)
+                    }
+
+                }
+                .padding(.bottom, 20)
 
             }
         }
