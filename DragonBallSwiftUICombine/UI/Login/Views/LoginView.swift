@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var animationAmount = 1.0
     
     var body: some View {
         ZStack{
@@ -73,7 +74,17 @@ struct LoginView: View {
                 }
                 .padding(.top, 50)
                 .opacity(0.8)
-                
+                .overlay(
+                    Circle()
+                        .stroke(.white)
+                        .scaleEffect(animationAmount)
+                        .opacity(2 - animationAmount)
+                        .animation(.easeInOut(duration: 1).repeatForever(), value: animationAmount)
+                        .padding(.top, 45)
+                        .onAppear{
+                            animationAmount = 2
+                        }
+                )
 
             }
         }
