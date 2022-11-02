@@ -8,10 +8,76 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
         ZStack{
             Image(decorative: "backgroundLogin")
+                .resizable()
+                .opacity(1)
+            
+            Image(decorative: "")
+                .resizable()
+                .background(.black)
+                .opacity(0.2)
+            
+            VStack{
+                Image(decorative: "title")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300)
+                    .opacity(0.8)
+                    .padding(.top, 150)
+                
+                VStack{
+                    TextField("Email", text: $email)
+                        .padding()
+                        .frame(height: 40)
+                        .background(.white)
+                        .foregroundColor(.blue)
+                        .cornerRadius(20)
+                        .shadow(radius: 2.0, x: 20, y: 10)
+                    //                        .autocapitalization(.none) //< iOS 16
+                        .textInputAutocapitalization(.never)
+                    //                        .disableAutocorrection(.true) // < iOS16
+                        .autocorrectionDisabled()
+                        .opacity(0.8)
+                    
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .frame(height: 40)
+                        .background(.white)
+                        .foregroundColor(.blue)
+                        .cornerRadius(20)
+                        .shadow(radius: 2.0, x: 20, y: 10)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .opacity(0.8)
+                        .padding(.top, 10)
+                }
+                .padding([.leading, .trailing], 20) //padding foir the VStack contains fields
+                
+                Button {
+                    //TODO: Login in ViewModel
+                } label: {
+                    Text("Login")
+                        .padding()
+                        .frame(height: 40)
+                        .font(.title2)
+                        .foregroundColor(.white)
+                    //RGB color -> Better with extensions
+                        .background(Color(uiColor: UIColor(red: 221.0/255.0, green: 99.0/255.0, blue: 0.0, alpha: 1.0)))
+                        .cornerRadius(15)
+                        .shadow(radius: 10.0, x: 20, y: 10)
+                }
+                .padding(.top, 50)
+                .opacity(0.8)
+                
+
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
