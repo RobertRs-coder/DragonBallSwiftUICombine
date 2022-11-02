@@ -85,7 +85,6 @@ struct LoginView: View {
                             animationAmount = 2
                         }
                 )
-                
                 Spacer ()
                 
                 HStack{
@@ -102,7 +101,6 @@ struct LoginView: View {
 
                 }
                 .padding(.bottom, 20)
-
             }
         }
         .ignoresSafeArea()

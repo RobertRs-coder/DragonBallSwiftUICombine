@@ -47,6 +47,7 @@
 /* Begin PBXFileReference section */
 		230DEFF62912969900983CA2 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		230DEFFA29129FAD00983CA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		230DEFFF2912BBCF00983CA2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2325E0A4291198BE002BF195 /* DragonBallSwiftUICombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallSwiftUICombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineApp.swift; sourceTree = "<group>"; };
 		2325E0A9291198BE002BF195 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		230A472F29119A8E007C726D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				230DEFFE2912AD2F00983CA2 /* Models */,
 				230A473629119B13007C726D /* Views */,
 				230A473729119B1A007C726D /* ViewModels */,
 			);
@@ -202,10 +204,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		230DEFFE2912AD2F00983CA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2325E09B291198BE002BF195 = {
 			isa = PBXGroup;
 			children = (
 				2325E0A6291198BE002BF195 /* DragonBallSwiftUICombine */,
+				230DEFFF2912BBCF00983CA2 /* README.md */,
 				2325E0BD291198BF002BF195 /* DragonBallSwiftUICombineTests */,
 				2325E0C7291198BF002BF195 /* DragonBallSwiftUICombineUITests */,
 				2325E0A5291198BE002BF195 /* Products */,
