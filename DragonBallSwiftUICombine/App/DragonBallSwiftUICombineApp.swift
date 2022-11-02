@@ -13,8 +13,8 @@ struct DragonBallSwiftUICombineApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext) //It is needt it to use CoreData
         }
     }
 }

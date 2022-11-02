@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230A473B29119CC3007C726D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* RootView.swift */; };
+		230A473C29119CC4007C726D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* RootView.swift */; };
+		230A474D2911A3F0007C726D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 230A474C2911A3F0007C726D /* KeychainSwift */; };
 		2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */; };
 		2325E0AA291198BE002BF195 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0A9291198BE002BF195 /* Persistence.swift */; };
 		2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AB291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld */; };
-		2325E0AF291198BE002BF195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* ContentView.swift */; };
+		2325E0AF291198BE002BF195 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* RootView.swift */; };
 		2325E0B1291198BF002BF195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2325E0B0291198BF002BF195 /* Assets.xcassets */; };
 		2325E0B5291198BF002BF195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2325E0B4291198BF002BF195 /* Preview Assets.xcassets */; };
 		2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0BE291198BF002BF195 /* DragonBallSwiftUICombineTests.swift */; };
@@ -40,7 +43,7 @@
 		2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineApp.swift; sourceTree = "<group>"; };
 		2325E0A9291198BE002BF195 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2325E0AC291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DragonBallSwiftUICombine.xcdatamodel; sourceTree = "<group>"; };
-		2325E0AE291198BE002BF195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2325E0AE291198BE002BF195 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		2325E0B0291198BF002BF195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2325E0B2291198BF002BF195 /* DragonBallSwiftUICombine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DragonBallSwiftUICombine.entitlements; sourceTree = "<group>"; };
 		2325E0B4291198BF002BF195 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230A474D2911A3F0007C726D /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +83,9 @@
 		230A472B29119A67007C726D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				230A472D29119A7E007C726D /* Services */,
+				230A473829119BE4007C726D /* Models */,
 				230A472C29119A6C007C726D /* Tools */,
+				230A472D29119A7E007C726D /* Services */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		230A473429119AEE007C726D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2325E0AE291198BE002BF195 /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +183,13 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		230A473829119BE4007C726D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2325E09B291198BE002BF195 = {
@@ -206,7 +219,6 @@
 				230A472B29119A67007C726D /* Domain */,
 				230A472E29119A8A007C726D /* UI */,
 				230A473129119AA3007C726D /* Resources */,
-				2325E0AE291198BE002BF195 /* ContentView.swift */,
 				2325E0B2291198BF002BF195 /* DragonBallSwiftUICombine.entitlements */,
 				2325E0AB291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld */,
 				2325E0B3291198BF002BF195 /* Preview Content */,
@@ -255,6 +267,9 @@
 			dependencies = (
 			);
 			name = DragonBallSwiftUICombine;
+			packageProductDependencies = (
+				230A474C2911A3F0007C726D /* KeychainSwift */,
+			);
 			productName = DragonBallSwiftUICombine;
 			productReference = 2325E0A4291198BE002BF195 /* DragonBallSwiftUICombine.app */;
 			productType = "com.apple.product-type.application";
@@ -327,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 2325E09B291198BE002BF195;
+			packageReferences = (
+				230A474B2911A3F0007C726D /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 2325E0A5291198BE002BF195 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -371,7 +389,7 @@
 			files = (
 				2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */,
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
-				2325E0AF291198BE002BF195 /* ContentView.swift in Sources */,
+				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230A473B29119CC3007C726D /* RootView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +409,7 @@
 			files = (
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
+				230A473C29119CC4007C726D /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +736,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		230A474B2911A3F0007C726D /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		230A474C2911A3F0007C726D /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 230A474B2911A3F0007C726D /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2325E0AB291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld */ = {
