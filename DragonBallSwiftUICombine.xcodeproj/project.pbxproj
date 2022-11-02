@@ -10,6 +10,9 @@
 		230A473B29119CC3007C726D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* RootView.swift */; };
 		230A473C29119CC4007C726D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AE291198BE002BF195 /* RootView.swift */; };
 		230A474D2911A3F0007C726D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 230A474C2911A3F0007C726D /* KeychainSwift */; };
+		230DEFF72912969900983CA2 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFF62912969900983CA2 /* Keychain.swift */; };
+		230DEFF82912969900983CA2 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFF62912969900983CA2 /* Keychain.swift */; };
+		230DEFF92912969900983CA2 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFF62912969900983CA2 /* Keychain.swift */; };
 		2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */; };
 		2325E0AA291198BE002BF195 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0A9291198BE002BF195 /* Persistence.swift */; };
 		2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0AB291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld */; };
@@ -39,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230DEFF62912969900983CA2 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		2325E0A4291198BE002BF195 /* DragonBallSwiftUICombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallSwiftUICombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineApp.swift; sourceTree = "<group>"; };
 		2325E0A9291198BE002BF195 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				230A473229119ACD007C726D /* CoreData */,
+				230DEFF62912969900983CA2 /* Keychain.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
+				230DEFF72912969900983CA2 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +406,7 @@
 			files = (
 				230A473B29119CC3007C726D /* RootView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
+				230DEFF82912969900983CA2 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
+				230DEFF92912969900983CA2 /* Keychain.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
 				230A473C29119CC4007C726D /* RootView.swift in Sources */,
 			);
