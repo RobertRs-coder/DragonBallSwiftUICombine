@@ -14,6 +14,10 @@ final class Keychain {
     func saveKeychain(key: String, value: String) -> Bool {
         if let data = value.data(using: .utf8){
             keychain.set(data, forKey: key)
+            
+            //Use keychain between ios & watch app -> Certificate Apple Web
+            //keychain.accessGroup = "<GROUPAPP>.com.robertrs.DragonBallSwiftUICombine"
+            
             return true
         } else{
             return false
