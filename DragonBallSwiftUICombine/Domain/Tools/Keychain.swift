@@ -7,6 +7,7 @@
 
 import KeychainSwift
 
+//Class to manage KeychainSwift package inside our project
 final class Keychain {
     var keychain = KeychainSwift()
     
