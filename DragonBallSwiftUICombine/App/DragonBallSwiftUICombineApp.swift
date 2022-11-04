@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct DragonBallSwiftUICombineApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
+    @StateObject var rootViewModel = RootViewmodel()
 
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environmentObject(rootViewModel)
+                //Use CoreData inside the app
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext) //It is needt it to use CoreData
         }
     }
