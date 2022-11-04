@@ -25,6 +25,8 @@
 		2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0BE291198BF002BF195 /* DragonBallSwiftUICombineTests.swift */; };
 		2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0C8291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift */; };
 		2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */; };
+		237589762915411700E1C2DE /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589752915411700E1C2DE /* StatusModel.swift */; };
+		237589782915414800E1C2DE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589772915414800E1C2DE /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		2325E0C4291198BF002BF195 /* DragonBallSwiftUICombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallSwiftUICombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2325E0C8291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineUITests.swift; sourceTree = "<group>"; };
 		2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 		230A473529119AF6007C726D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				237589772915414800E1C2DE /* RootViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 		230A473829119BE4007C726D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				237589752915411700E1C2DE /* StatusModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,8 +416,10 @@
 				230DEFFB29129FAD00983CA2 /* LoginView.swift in Sources */,
 				2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */,
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
+				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
+				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
 				230DEFF72912969900983CA2 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
