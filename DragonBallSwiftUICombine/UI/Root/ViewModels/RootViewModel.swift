@@ -30,6 +30,19 @@ final class RootViewmodel: ObservableObject{
                 //Return the string because it's the token
                 return String(decoding: $0.data, as: UTF8.self)
             }
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    self.status = .error(error: String(describing: error))
+                case .finished:
+                    self.status = .loaded // Login Success
+                }
+            } receiveValue: { token in
+                self.tokenJWT = token
+            }
+            .store(in: &subscribers)
+
     }
 
 }
