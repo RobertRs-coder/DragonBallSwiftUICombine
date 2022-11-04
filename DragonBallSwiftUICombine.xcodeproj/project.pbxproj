@@ -27,6 +27,9 @@
 		2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */; };
 		237589762915411700E1C2DE /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589752915411700E1C2DE /* StatusModel.swift */; };
 		237589782915414800E1C2DE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589772915414800E1C2DE /* RootViewModel.swift */; };
+		2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
+		2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
+		2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,7 @@
 		2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		230A472D29119A7E007C726D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2375897A2915424300E1C2DE /* BaseNetwork.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				230DEFFB29129FAD00983CA2 /* LoginView.swift in Sources */,
 				2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */,
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
+				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
@@ -432,6 +438,7 @@
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 				230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */,
 				230DEFF82912969900983CA2 /* Keychain.swift in Sources */,
+				2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				230DEFF92912969900983CA2 /* Keychain.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
+				2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				230DEFFD29129FAD00983CA2 /* LoginView.swift in Sources */,
 				230A473C29119CC4007C726D /* RootView.swift in Sources */,
 			);

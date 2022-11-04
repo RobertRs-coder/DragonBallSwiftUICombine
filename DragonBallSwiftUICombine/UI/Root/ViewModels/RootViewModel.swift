@@ -15,6 +15,5 @@ final class RootViewmodel: ObservableObject{
     
     private var subscribers = Set<AnyCancellable>()
     
-    
-    
+        
 }
