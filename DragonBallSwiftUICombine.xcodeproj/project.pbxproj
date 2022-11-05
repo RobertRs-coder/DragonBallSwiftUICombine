@@ -33,6 +33,9 @@
 		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
+		23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
+		23E918782916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
+		23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,7 @@
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
+		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				230A473329119AE8007C726D /* Root */,
+				23E918752916CCFD0042DA84 /* Common */,
 				230A472F29119A8E007C726D /* Login */,
 			);
 			path = UI;
@@ -287,6 +292,14 @@
 			path = DragonBallSwiftUICombineUITests;
 			sourceTree = "<group>";
 		};
+		23E918752916CCFD0042DA84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23E918762916CD0E0042DA84 /* LoadingView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -426,6 +439,7 @@
 				230DEFFB29129FAD00983CA2 /* LoginView.swift in Sources */,
 				2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */,
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
+				23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
@@ -445,6 +459,7 @@
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 				230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */,
 				230DEFF82912969900983CA2 /* Keychain.swift in Sources */,
+				23E918782916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +473,7 @@
 				230DEFF92912969900983CA2 /* Keychain.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
 				2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */,
+				23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				230DEFFD29129FAD00983CA2 /* LoginView.swift in Sources */,
 				230A473C29119CC4007C726D /* RootView.swift in Sources */,
 			);
