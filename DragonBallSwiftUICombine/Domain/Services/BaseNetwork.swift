@@ -7,7 +7,7 @@
 
 import Foundation
 
-let server = "http//dragonball.keepcoding.education"
+let server = "https://dragonball.keepcoding.education"
 
 struct HTTPMethod {
     static let post = "POST"
@@ -22,17 +22,17 @@ enum endpoint: String {
 
 struct BaseNetwork {
     func getSessionLogin(user: String, password: String) -> URLRequest {
-        let url = URL(string: "\(server)\(endpoint.login.rawValue)")!
+        let url = URL(string: "\(server)\(endpoint.login.rawValue)")
         //Encode credentials
         let encodedCredentials = "\(user):\(password)".data(using: .utf8)?.base64EncodedString()
         var securedCredentials = ""
-        //Unwrap optinal value
+        //Unwrap base64 optional value
         if let encodedCredentials = encodedCredentials {
             securedCredentials = "Basic \(encodedCredentials)"
         }
         
         //Create request from url
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url!)
         request.httpMethod = HTTPMethod.post
         //Request header
         request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")

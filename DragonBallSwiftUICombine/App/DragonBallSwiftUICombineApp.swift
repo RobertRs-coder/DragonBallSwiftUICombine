@@ -14,7 +14,7 @@ struct DragonBallSwiftUICombineApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            LoginView()
                 .environmentObject(rootViewModel)
                 //Use CoreData inside the app
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext) //It is needt it to use CoreData

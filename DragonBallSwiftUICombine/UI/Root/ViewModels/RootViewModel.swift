@@ -20,7 +20,7 @@ final class RootViewModel: ObservableObject{
         self.status = .loading
         
         URLSession.shared
-            .dataTaskPublisher(for: BaseNetwork().getSessionLogin(user: user, password: password))
+            .dataTaskPublisher(for: BaseNetwork().getSessionLogin(user: user, password: password.description))
             .tryMap {
                 guard let response = $0.response as? HTTPURLResponse,
                       response.statusCode == 200 else {

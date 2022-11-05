@@ -11,7 +11,7 @@ struct LoginView: View {
     @EnvironmentObject private var rootViewModel: RootViewModel
     
     @State private var email = ""
-    @State private var password = ""
+    @State var password = ""
     @State private var animationAmount = 1.0
     
     var body: some View {
