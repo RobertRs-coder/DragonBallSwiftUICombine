@@ -26,8 +26,8 @@ final class Keychain {
         }
     }
     
-    //Function to read keychain
-    func readKeychain(key: String) -> String? {
+    //Function to load keychain
+    func loadKeychain(key: String) -> String? {
         if let data = keychain.get(key){
             return data
         } else{

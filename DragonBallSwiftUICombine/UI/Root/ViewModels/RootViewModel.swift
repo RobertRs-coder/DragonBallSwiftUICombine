@@ -14,10 +14,28 @@ final class RootViewModel: ObservableObject{
     //MARK: Published variables
     @Published var status = Status.none
     private var subscribers = Set<AnyCancellable>()
+    private var keychain = Keychain()
     
     @Published var tokenJWT: String = "" {
         didSet{
-            Keychain().saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
+            keychain.saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
+        }
+    }
+    init() {
+        //Token control
+        self.loggedUserControl()
+    }
+    
+    func loggedUserControl() {
+        let tokenSaved = keychain.loadKeychain(key: CONST_TOKEN_ID)
+        
+        if let token = tokenSaved {
+            self.tokenJWT = token
+            
+            if token.count > 0 {
+                self.status = .loaded //We change status to skip Login
+                
+            }
         }
     }
     
@@ -45,7 +63,6 @@ final class RootViewModel: ObservableObject{
                 }
             } receiveValue: { token in
                 self.tokenJWT = token
-                print("Token: \(self.tokenJWT)")
             }
             .store(in: &subscribers)
     }
