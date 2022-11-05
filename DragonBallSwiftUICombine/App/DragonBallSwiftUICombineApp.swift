@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct DragonBallSwiftUICombineApp: App {
 //    let persistenceController = PersistenceController.shared
-    @StateObject var rootViewModel = RootViewmodel()
+    @StateObject var rootViewModel = RootViewModel()
 
     var body: some Scene {
         WindowGroup {

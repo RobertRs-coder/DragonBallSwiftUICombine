@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class RootViewmodel: ObservableObject{
+final class RootViewModel: ObservableObject{
     //MARK: Published variables
     @Published var status = Status.none
     @Published var tokenJWT: String = ""
