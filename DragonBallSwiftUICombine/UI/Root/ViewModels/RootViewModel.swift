@@ -39,6 +39,7 @@ final class RootViewModel: ObservableObject{
                 }
             } receiveValue: { token in
                 self.tokenJWT = token
+                print("Token: \(self.tokenJWT)")
             }
             .store(in: &subscribers)
     }
