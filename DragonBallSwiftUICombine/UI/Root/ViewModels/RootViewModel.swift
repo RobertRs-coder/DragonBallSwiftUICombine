@@ -8,19 +8,25 @@
 import Foundation
 import Combine
 
+public let CONST_TOKEN_ID = "tokenJWTKeychain"
+
 final class RootViewModel: ObservableObject{
     //MARK: Published variables
     @Published var status = Status.none
-    @Published var tokenJWT: String = ""
-    
     private var subscribers = Set<AnyCancellable>()
+    
+    @Published var tokenJWT: String = "" {
+        didSet{
+            Keychain().saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
+        }
+    }
     
     //Login to server
     func login(user: String, password: String) {
         self.status = .loading
         
         URLSession.shared
-            .dataTaskPublisher(for: BaseNetwork().getSessionLogin(user: user, password: password.description))
+            .dataTaskPublisher(for: BaseNetwork().getSessionLogin(user: user, password: password))
             .tryMap {
                 guard let response = $0.response as? HTTPURLResponse,
                       response.statusCode == 200 else {
