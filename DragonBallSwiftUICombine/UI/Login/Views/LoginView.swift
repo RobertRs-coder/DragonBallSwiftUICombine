@@ -9,9 +9,15 @@ import SwiftUI
 
 struct LoginView: View {
     @EnvironmentObject private var rootViewModel: RootViewModel
-    
+
+#if DEBUG
+    @State private var email = "rrojo.va@gmail.com"
+    @State var password = "123456"
+#else
     @State private var email = ""
     @State var password = ""
+#endif
+    
     @State private var animationAmount = 1.0
     
     var body: some View {

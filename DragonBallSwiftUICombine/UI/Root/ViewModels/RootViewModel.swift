@@ -34,7 +34,6 @@ final class RootViewModel: ObservableObject{
         self.loggedUserControl()
     }
     
-    
     /*
     func loggedUserControl() {
         let tokenSaved = keychain.loadKeychain(key: CONST_TOKEN_ID)
