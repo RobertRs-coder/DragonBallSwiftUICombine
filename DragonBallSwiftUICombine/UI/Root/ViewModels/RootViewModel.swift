@@ -17,7 +17,6 @@ final class RootViewModel: ObservableObject{
     
     //Login to server
     func login(user: String, password: String) {
-      
         self.status = .loading
         
         URLSession.shared
@@ -42,7 +41,5 @@ final class RootViewModel: ObservableObject{
                 self.tokenJWT = token
             }
             .store(in: &subscribers)
-
     }
-
 }

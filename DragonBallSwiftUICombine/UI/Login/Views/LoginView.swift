@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject private var rootViewModel: RootViewModel
+    
     @State private var email = ""
     @State private var password = ""
     @State private var animationAmount = 1.0

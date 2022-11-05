@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 let server = "http//dragonball.keepcoding.education"
 
 struct HTTPMethod {
@@ -22,7 +21,6 @@ enum endpoint: String {
 }
 
 struct BaseNetwork {
-    
     func getSessionLogin(user: String, password: String) -> URLRequest {
         let url = URL(string: "\(server)\(endpoint.login.rawValue)")!
         //Encode credentials
