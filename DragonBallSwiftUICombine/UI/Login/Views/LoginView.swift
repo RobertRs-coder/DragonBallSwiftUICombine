@@ -64,7 +64,8 @@ struct LoginView: View {
                 .padding([.leading, .trailing], 20) //padding foir the VStack contains fields
                 
                 Button {
-                    //TODO: Login in ViewModel
+                    //Login in ViewModel
+                    rootViewModel.login(user: email, password: password)
                 } label: {
                     Text("Login")
                         .padding()
