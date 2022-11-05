@@ -12,6 +12,7 @@ final class Keychain {
     var keychain = KeychainSwift()
     
     //Function to save keychain
+    @discardableResult
     func saveKeychain(key: String, value: String) -> Bool {
         if let data = value.data(using: .utf8){
             keychain.set(data, forKey: key)
