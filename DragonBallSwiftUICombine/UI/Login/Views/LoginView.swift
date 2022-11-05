@@ -31,6 +31,8 @@ struct LoginView: View {
                     .opacity(0.8)
                     .padding(.top, 150)
                 
+                Spacer()
+                
                 VStack{
                     TextField("Email", text: $email)
                         .padding()
