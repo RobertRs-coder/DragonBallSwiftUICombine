@@ -10,16 +10,16 @@ import SwiftUI
 struct RootView: View {
     @EnvironmentObject var rootViewModel: RootViewModel
     var body: some View {
-        switch rootViewModel.status{
-        case .none:
+        switch rootViewModel.status {
+        case .login:
             LoginView()
         case .register:
             Text("Register")
         case .loading:
-            Text("Loading")
-        case .error(error: let errroString):
-            Text("Error: \(errroString)")
-        case .loaded:
+            LoadingView()
+        case .error(error: let errorString):
+            ErrorView(error: errorString)
+        case .home:
             Text("Home")
         }
     }

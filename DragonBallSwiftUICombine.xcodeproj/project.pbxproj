@@ -36,6 +36,9 @@
 		23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
 		23E918782916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
 		23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
+		23E9187F2916D2290042DA84 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9187E2916D2290042DA84 /* ErrorView.swift */; };
+		23E918802916D2290042DA84 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9187E2916D2290042DA84 /* ErrorView.swift */; };
+		23E918812916D2290042DA84 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E9187E2916D2290042DA84 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,7 @@
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		23E9187E2916D2290042DA84 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				23E918762916CD0E0042DA84 /* LoadingView.swift */,
+				23E9187E2916D2290042DA84 /* ErrorView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
+				23E9187F2916D2290042DA84 /* ErrorView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
 				23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
@@ -461,6 +467,7 @@
 				230DEFF82912969900983CA2 /* Keychain.swift in Sources */,
 				23E918782916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */,
+				23E918802916D2290042DA84 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +482,7 @@
 				2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				230DEFFD29129FAD00983CA2 /* LoginView.swift in Sources */,
+				23E918812916D2290042DA84 /* ErrorView.swift in Sources */,
 				230A473C29119CC4007C726D /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

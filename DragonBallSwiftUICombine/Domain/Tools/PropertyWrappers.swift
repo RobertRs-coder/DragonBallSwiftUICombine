@@ -10,19 +10,18 @@ import Foundation
 @propertyWrapper
 class PersistenceKeychain{
     private var key: String
-    private let keychain: Keychain
     
-    init(key: String, keychain: Keychain = Keychain()) {
+    
+    init(key: String) {
         self.key = key
-        self.keychain = keychain
     }
     
     var wrappedValue: String {
         set{
-            keychain.saveKeychain(key: key, value: newValue)
+            Keychain.saveKeychain(key: key, value: newValue)
         }
         get{
-            if let value = keychain.loadKeychain(key: key) {
+            if let value = Keychain.loadKeychain(key: key) {
                 return value
             } else{
                 return ""

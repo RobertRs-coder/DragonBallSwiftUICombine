@@ -12,15 +12,14 @@ public let CONST_TOKEN_ID = "tokenJWTKeychain"
 
 final class RootViewModel: ObservableObject{
     //MARK: Published variables
-    @Published var status = Status.none
+    @Published var status = Status.login
     private var subscribers = Set<AnyCancellable>()
-    private var keychain = Keychain()
     
     /*
     @Published var tokenJWT: String = "" {
         didSet{
             if tokenJWT != "" {
-                keychain.saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
+                Keychain.shared.saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
                 print("Token: \(tokenJWT)")
             }
         }
@@ -36,7 +35,7 @@ final class RootViewModel: ObservableObject{
     
     /*
     func loggedUserControl() {
-        let tokenSaved = keychain.loadKeychain(key: CONST_TOKEN_ID)
+        let tokenSaved = Keychain.shared.loadKeychain(key: CONST_TOKEN_ID)
         
         if let token = tokenSaved {
             self.tokenJWT = token
@@ -50,8 +49,11 @@ final class RootViewModel: ObservableObject{
      */
     
     func loggedUserControl() {
-        if tokenJWT != "" {
-            self.status = .loaded
+//        Keychain.deleteKeychain(key: CONST_TOKEN_ID)
+        
+        if self.tokenJWT != "" {
+            
+            self.status = .home
         }
     }
     
@@ -75,7 +77,7 @@ final class RootViewModel: ObservableObject{
                 case .failure(let error):
                     self.status = .error(error: String(describing: error))
                 case .finished:
-                    self.status = .loaded // Login Success
+                    self.status = .home // Login Success
                 }
             } receiveValue: { token in
                 self.tokenJWT = token

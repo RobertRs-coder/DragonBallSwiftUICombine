@@ -9,11 +9,11 @@ import KeychainSwift
 
 //Class to manage KeychainSwift package inside our project
 final class Keychain {
-    var keychain = KeychainSwift()
-    
+    static let keychain = KeychainSwift()
+
     //Function to save keychain
     @discardableResult
-    func saveKeychain(key: String, value: String) -> Bool {
+    static func saveKeychain(key: String, value: String) -> Bool {
         if let data = value.data(using: .utf8){
             keychain.set(data, forKey: key)
             //Use keychain between ios & watch app -> Certificate Apple Web
@@ -25,7 +25,7 @@ final class Keychain {
     }
     
     //Function to load keychain
-    func loadKeychain(key: String) -> String? {
+    static func loadKeychain(key: String) -> String? {
         if let data = keychain.get(key){
             return data
         } else{
@@ -34,7 +34,7 @@ final class Keychain {
     }
     
     //Function to delete keychain
-    func deleteKeychain(key: String) {
+    static func deleteKeychain(key: String) {
         keychain.delete(key)
     }
 }
