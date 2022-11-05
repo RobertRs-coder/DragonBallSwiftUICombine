@@ -30,6 +30,9 @@
 		2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
 		2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
 		2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
+		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
+		23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
+		23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			children = (
 				230A473229119ACD007C726D /* CoreData */,
 				230DEFF62912969900983CA2 /* Keychain.swift */,
+				23E918712916C78A0042DA84 /* PropertyWrappers.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
+				23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230DEFF72912969900983CA2 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230A473B29119CC3007C726D /* RootView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 				230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */,
@@ -446,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				230DEFF92912969900983CA2 /* Keychain.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,

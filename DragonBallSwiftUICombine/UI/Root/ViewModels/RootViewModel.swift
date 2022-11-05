@@ -19,6 +19,7 @@ final class RootViewModel: ObservableObject{
     @Published var tokenJWT: String = "" {
         didSet{
             keychain.saveKeychain(key: CONST_TOKEN_ID, value: tokenJWT) //When value change it's save it Keychain
+            print("Token: \(tokenJWT)")
         }
     }
     init() {
