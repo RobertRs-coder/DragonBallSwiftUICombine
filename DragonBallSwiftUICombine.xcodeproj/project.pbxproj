@@ -26,6 +26,9 @@
 		2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0C8291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift */; };
 		2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */; };
 		232AE10B2918358A00C7974D /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AE10A2918358A00C7974D /* HeroesViewModel.swift */; };
+		232AE10D2918376000C7974D /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AE10C2918376000C7974D /* HeroesView.swift */; };
+		232AE10E2918376000C7974D /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AE10C2918376000C7974D /* HeroesView.swift */; };
+		232AE10F2918376000C7974D /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AE10C2918376000C7974D /* HeroesView.swift */; };
 		232BBB622916F0450081BB54 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BBB612916F0450081BB54 /* HomeView.swift */; };
 		232BBB682916F1730081BB54 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232BBB672916F1730081BB54 /* HeroModel.swift */; };
 		237589762915411700E1C2DE /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589752915411700E1C2DE /* StatusModel.swift */; };
@@ -79,6 +82,7 @@
 		2325E0C8291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineUITests.swift; sourceTree = "<group>"; };
 		2325E0CA291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		232AE10A2918358A00C7974D /* HeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewModel.swift; sourceTree = "<group>"; };
+		232AE10C2918376000C7974D /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
 		232BBB612916F0450081BB54 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		232BBB672916F1730081BB54 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 		232BBB6A2916F65C0081BB54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				232AE10C2918376000C7974D /* HeroesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -510,6 +515,7 @@
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 				232AE10B2918358A00C7974D /* HeroesViewModel.swift in Sources */,
 				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
+				232AE10D2918376000C7974D /* HeroesView.swift in Sources */,
 				23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230DEFF72912969900983CA2 /* Keychain.swift in Sources */,
 				232BBB682916F1730081BB54 /* HeroModel.swift in Sources */,
@@ -520,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232AE10E2918376000C7974D /* HeroesView.swift in Sources */,
 				23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230A473B29119CC3007C726D /* RootView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
@@ -541,6 +548,7 @@
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
 				2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */,
+				232AE10F2918376000C7974D /* HeroesView.swift in Sources */,
 				230DEFFD29129FAD00983CA2 /* LoginView.swift in Sources */,
 				23E918812916D2290042DA84 /* ErrorView.swift in Sources */,
 				230A473C29119CC4007C726D /* RootView.swift in Sources */,
