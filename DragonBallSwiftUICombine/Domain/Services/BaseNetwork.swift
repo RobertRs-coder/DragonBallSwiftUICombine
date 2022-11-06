@@ -18,6 +18,7 @@ struct HTTPMethod {
 
 enum endpoint: String {
     case login = "/api/auth/login"
+    case heroList = "/api/heros/all"
 }
 
 struct BaseNetwork {
@@ -37,6 +38,28 @@ struct BaseNetwork {
         //Request header
         request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
         request.addValue(securedCredentials, forHTTPHeaderField: "Authorization")
+        
+        return request
+    }
+    
+    func getSessionHeroes(filter: String) -> URLRequest {
+        let url = URL(string: "\(server)\(endpoint.heroList.rawValue)")
+        
+        //Create request from url
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.post
+        
+        //Request json body
+        request.httpBody = try? JSONEncoder().encode(HeroFilter(name: filter))
+        //Request header
+        request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
+        
+        //Security
+        let token = Keychain.loadKeychain(key: CONST_TOKEN_ID)
+        if let tokenJWT = token{
+            request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization")
+        }
+        
         
         return request
     }
