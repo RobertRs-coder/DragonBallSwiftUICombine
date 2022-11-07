@@ -12,14 +12,9 @@ struct Developer: Codable, Identifiable {
     let id, apell1, apell2, email: String
     let name: String
     let photo: String
-    let heroes: [Hero] //like heroes from developer
+    let heroes: [Hero] //liked heroes from developer
     
-    private enum CodinKeys: String, CodingKey, Codable{
-        
-        case bootcamp
-        case id, apell1, apell2, email
-        case name
-        case photo
+    private enum CodinKeys: String, CodingKey{
         case heroes = "heros"
     }}
 

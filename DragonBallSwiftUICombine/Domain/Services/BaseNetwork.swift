@@ -19,6 +19,7 @@ struct HTTPMethod {
 enum endpoint: String {
     case login = "/api/auth/login"
     case heroList = "/api/heros/all"
+    case developerList = "/api/data/developers"
 }
 
 struct BaseNetwork {
@@ -60,6 +61,24 @@ struct BaseNetwork {
             request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization")
         }
         
+        return request
+    }
+    
+    func getSessionDevelopers() -> URLRequest {
+        let url = URL(string: "\(server)\(endpoint.developerList.rawValue)")
+        
+        //Create request from url
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.get
+
+        //Request header
+        request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
+        
+        //Security
+        let token = Keychain.loadKeychain(key: CONST_TOKEN_ID)
+        if let tokenJWT = token{
+            request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization")
+        }
         
         return request
     }
