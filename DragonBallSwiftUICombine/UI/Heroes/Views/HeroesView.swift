@@ -40,7 +40,7 @@ struct HeroesView: View {
                         Image(systemName: "xmark.circle")
                         .font(.caption)
                         .foregroundColor(.red)
-                        Text("Close session")
+                        Text("Logout")
                         .font(.caption)
                         .foregroundColor(.red)
                     }
