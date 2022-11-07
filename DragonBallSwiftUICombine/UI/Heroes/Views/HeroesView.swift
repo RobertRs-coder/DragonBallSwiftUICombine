@@ -27,7 +27,7 @@ struct HeroesView: View {
             }
             .searchable(text: $filter, prompt: "Search hero")
             .onChange(of: filter, perform: { newValue in
-                print("filter: \(newValue)")
+                viewModel.getHeroes(filter: newValue)
             })
             .onDisappear{
                 //Call some method
