@@ -20,8 +20,9 @@ enum endpoint: String {
     case login = "/api/auth/login"
     case heroList = "/api/heros/all"
     case developerList = "/api/data/developers"
+    case bootcampList = "/api/data/bootcamps"
 }
-
+//Use this to call server
 struct BaseNetwork {
     func getSessionLogin(user: String, password: String) -> URLRequest {
         let url = URL(string: "\(server)\(endpoint.login.rawValue)")
@@ -79,6 +80,19 @@ struct BaseNetwork {
         if let tokenJWT = token{
             request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization")
         }
+        
+        return request
+    }
+    
+    func getSessionBootcamps() -> URLRequest {
+        let url = URL(string: "\(server)\(endpoint.bootcampList.rawValue)")
+        
+        //Create request from url
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.get
+
+        //Request header
+        request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
         
         return request
     }
