@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HeroesView: View {
     @StateObject var viewModel: HeroesViewModel
+    @State private var filter: String = ""
+    
     var body: some View {
         NavigationView{
             List{
@@ -20,9 +22,19 @@ struct HeroesView: View {
                             //DetailView
                             HeroesRowView(hero: hero)
                         }
-
                     }
                 }
+            }
+            .searchable(text: $filter, prompt: "Search hero")
+            .onChange(of: filter, perform: { newValue in
+                print("filter: \(newValue)")
+            })
+            .onDisappear{
+                //Call some method
+
+            }
+            .onAppear{
+                //Call some method
             }
         }
     }

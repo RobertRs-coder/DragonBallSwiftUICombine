@@ -32,7 +32,6 @@ final class RootViewModel: ObservableObject{
         //Token control
         self.loggedUserControl()
     }
-    
     /*
     func loggedUserControl() {
         let tokenSaved = Keychain.shared.loadKeychain(key: CONST_TOKEN_ID)
@@ -47,11 +46,10 @@ final class RootViewModel: ObservableObject{
         }
     }
      */
-    
     func loggedUserControl() {
-        //        Keychain.deleteKeychain(key: CONST_TOKEN_ID)
         //Check date of the token
         guard let date = LocalDataModel.getSyncDate(),
+              //Give it 60 seconds to test token time validation
               date.addingTimeInterval(60) > Date(),
               !self.tokenJWT.isEmpty else{
             Keychain.deleteKeychain(key: CONST_TOKEN_ID)
