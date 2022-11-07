@@ -50,6 +50,11 @@ final class RootViewModel: ObservableObject{
     
     func loggedUserControl() {
 //        Keychain.deleteKeychain(key: CONST_TOKEN_ID)
+        //Check date of the token
+        if let date = LocalDataModel.getSyncDate(),
+              date.addingTimeInterval(1) > Date() {
+            Keychain.deleteKeychain(key: CONST_TOKEN_ID)
+              }
         
         if self.tokenJWT != "" {
             
@@ -81,6 +86,8 @@ final class RootViewModel: ObservableObject{
                 }
             } receiveValue: { token in
                 self.tokenJWT = token
+                //Save date which you get token
+                LocalDataModel.saveSyncDate()
             }
             .store(in: &subscribers)
     }

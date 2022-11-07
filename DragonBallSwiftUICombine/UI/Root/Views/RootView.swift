@@ -20,7 +20,7 @@ struct RootView: View {
         case .error(error: let errorString):
             ErrorView(error: errorString)
         case .home:
-            Text("Home")
+            HomeView()
         }
     }
 }
