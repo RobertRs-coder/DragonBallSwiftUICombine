@@ -14,7 +14,12 @@ struct HeroesView: View {
             List{
                 if let heroes = viewModel.heroes{
                     ForEach(heroes) { hero in
-                        Text(hero.name)
+                        NavigationLink {
+                            HeroesRowView(hero: hero)
+                        } label: {
+                            Text(hero.name)
+                        }
+
                     }
                 }
             }
