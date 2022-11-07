@@ -20,8 +20,18 @@ final class HeroesViewModel: ObservableObject {
             getHeroes(filter: "")
         }
     }
+    
+    //Cancel all subcribers
+    func cancelAll(){
+        subscribers.forEach { AnyCancellable in
+            AnyCancellable.cancel()
+        }
+    }
+    
     //Function to get data from server using Combine
     func getHeroes(filter: String) {
+        //Delete all subscribers to clean memory
+        cancelAll()
         self.status = .loading
         URLSession.shared
             .dataTaskPublisher(for: BaseNetwork().getSessionHeroes(filter: filter))
