@@ -28,7 +28,7 @@ final class HeroesViewModel: ObservableObject {
         }
     }
     
-    //Function to get data from server using Combine
+    //Function to get heroes from server using Combine
     func getHeroes(filter: String) {
         //Delete all subscribers to clean memory
         cancelAll()
