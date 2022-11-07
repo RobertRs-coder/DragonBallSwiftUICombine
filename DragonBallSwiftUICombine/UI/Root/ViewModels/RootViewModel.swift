@@ -49,17 +49,15 @@ final class RootViewModel: ObservableObject{
      */
     
     func loggedUserControl() {
-//        Keychain.deleteKeychain(key: CONST_TOKEN_ID)
+        //        Keychain.deleteKeychain(key: CONST_TOKEN_ID)
         //Check date of the token
-        if let date = LocalDataModel.getSyncDate(),
-              date.addingTimeInterval(1) > Date() {
+        guard let date = LocalDataModel.getSyncDate(),
+              date.addingTimeInterval(60) > Date(),
+              !self.tokenJWT.isEmpty else{
             Keychain.deleteKeychain(key: CONST_TOKEN_ID)
-              }
-        
-        if self.tokenJWT != "" {
-            
-            self.status = .home
+            return
         }
+        self.status = .home
     }
     
     //Login to server
