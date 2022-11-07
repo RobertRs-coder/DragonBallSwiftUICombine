@@ -19,7 +19,7 @@ struct HeroesView: View {
                 if let heroes = viewModel.heroes{
                     ForEach(heroes) { hero in
                         NavigationLink {
-                            Text(hero.name)
+                            HeroesDetailView(viewModel: viewModel, hero: hero)
                         } label: {
                             //DetailView
                             HeroesRowView(hero: hero)
@@ -44,7 +44,6 @@ struct HeroesView: View {
                         .font(.caption)
                         .foregroundColor(.red)
                     }
-
                 }
             }
             .onDisappear{
