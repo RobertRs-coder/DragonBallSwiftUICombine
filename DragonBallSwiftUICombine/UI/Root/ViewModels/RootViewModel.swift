@@ -58,6 +58,11 @@ final class RootViewModel: ObservableObject{
         self.status = .home
     }
     
+    func closeSession(){
+        self.tokenJWT = ""
+        self.status = .login
+    }
+    
     //Login to server
     func login(user: String, password: String) {
         self.status = .loading

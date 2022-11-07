@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HeroesView: View {
+    @EnvironmentObject var rootViewModel: RootViewModel
     @StateObject var viewModel: HeroesViewModel
     @State private var filter: String = ""
     
     var body: some View {
-        NavigationView{
+        //NavigationView <iOS 16
+        NavigationStack{
             List{
                 if let heroes = viewModel.heroes{
                     ForEach(heroes) { hero in
@@ -29,12 +31,27 @@ struct HeroesView: View {
             .onChange(of: filter, perform: { newValue in
                 viewModel.getHeroes(filter: newValue)
             })
-            .onDisappear{
-                //Call some method
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Button {
+                        //Close session
+                        rootViewModel.closeSession()
+                    } label: {
+                        Image(systemName: "xmark.circle")
+                        .font(.caption)
+                        .foregroundColor(.red)
+                        Text("Close session")
+                        .font(.caption)
+                        .foregroundColor(.red)
+                    }
 
+                }
+            }
+            .onDisappear{
+                //Call some method when View disappear
             }
             .onAppear{
-                //Call some method
+                //Call some method when View appear
             }
         }
     }
