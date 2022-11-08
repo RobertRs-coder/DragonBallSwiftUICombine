@@ -20,7 +20,7 @@ enum endpoint: String {
     case login = "/api/auth/login"
     case heroList = "/api/heros/all"
     case developerList = "/api/data/developers"
-    case bootcampList = "/api/data/bootcamps"
+    case bootcampList = "/api/data/bootcamps" //Not security
 }
 //Use this to call server
 struct BaseNetwork {
@@ -83,7 +83,9 @@ struct BaseNetwork {
         
         return request
     }
-    
+    /*
+        No security because when user register inside the app they need to select bootcamp"
+     */
     func getSessionBootcamps() -> URLRequest {
         let url = URL(string: "\(server)\(endpoint.bootcampList.rawValue)")
         

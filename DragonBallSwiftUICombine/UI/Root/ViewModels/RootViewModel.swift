@@ -14,6 +14,7 @@ final class RootViewModel: ObservableObject{
     //MARK: Published variables
     @Published var status = Status.login
     private var subscribers = Set<AnyCancellable>()
+    private var bootcamps: [Bootcamp]?
     
     /*
     @Published var tokenJWT: String = "" {
@@ -29,6 +30,8 @@ final class RootViewModel: ObservableObject{
     var tokenJWT
     
     init() {
+        //Load bootcamp list
+        self.loadBootcamps()
         //Token control
         self.loggedUserControl()
     }
@@ -89,6 +92,33 @@ final class RootViewModel: ObservableObject{
                 self.tokenJWT = token
                 //Save date which you get token
                 LocalDataModel.saveSyncDate()
+            }
+            .store(in: &subscribers)
+    }
+    
+    //Load bootcamp from server
+    func loadBootcamps() {
+        URLSession.shared
+            .dataTaskPublisher(for: BaseNetwork().getSessionBootcamps())
+            .tryMap {
+                guard let response = $0.response as? HTTPURLResponse,
+                      response.statusCode == 200 else {
+                    throw URLError(.badServerResponse)
+                }
+                //Return the string because it's the token
+                return $0.data
+            }
+            .decode(type: [Bootcamp].self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    self.status = .error(error: String(describing: error))
+                case .finished:
+                    self.status = .home // Login Success
+                }
+            } receiveValue: { data in
+                self.bootcamps = data
             }
             .store(in: &subscribers)
     }
