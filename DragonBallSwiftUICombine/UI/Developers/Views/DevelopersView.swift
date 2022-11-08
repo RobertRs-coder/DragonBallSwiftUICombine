@@ -15,7 +15,7 @@ struct DevelopersView: View {
         ScrollView(){
             //Step1: Iterate in bootcamps
             if let bootcamps = rootViewModel.bootcamps,
-               let developers = viewModel.developers{
+               let _ = viewModel.developers{
                 //We have bootcamps & developers
                 ForEach(bootcamps) { bootcamp in
                     let dataFilter = viewModel.getDevelopersOfBootcamp(id: bootcamp.id)

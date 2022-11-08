@@ -12,12 +12,14 @@ struct Developer: Codable, Identifiable {
     let id, apell1, apell2, email: String
     let name: String
     let photo: String
-    let heroes: [Hero] //liked heroes from developer
+    var heros: [Hero] //liked heroes from developer
     
-    private enum CodinKeys: String, CodingKey{
-        case heroes = "heros"
-    }}
-
+//    //I can't do it -> I don't know why??
+//    private enum CodinKeys: String, CodingKey, [Hero]{
+//        case heroes = "heros"
+//    }
+    
+}
 
 struct Bootcamp: Codable, Identifiable {
     let id: String

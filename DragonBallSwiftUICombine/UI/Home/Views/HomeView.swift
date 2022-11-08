@@ -15,6 +15,11 @@ struct HomeView: View {
                 Image(systemName: "figure.kickboxing")
                 Text("Heroes")
             }
+            DevelopersView(viewModel: DevelopersViewModel())
+             .tabItem {
+                 Image(systemName: "lock.open.desktopcomputer")
+                 Text("Developers")
+             }
         }
     }
 }
