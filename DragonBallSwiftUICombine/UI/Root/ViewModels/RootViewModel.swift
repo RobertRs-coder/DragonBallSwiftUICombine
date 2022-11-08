@@ -32,11 +32,12 @@ final class RootViewModel: ObservableObject{
     init(testing: Bool = false) {
         //Token control
         self.loggedUserControl()
-        if !testing{
+        if testing{
+            //Default bootcamps
+            self.loadBootcampsTesting()
+        } else{
             //Load bootcamp list
             self.loadBootcamps()
-        } else{
-            //Deafult bootcamps
         }
     }
     /*

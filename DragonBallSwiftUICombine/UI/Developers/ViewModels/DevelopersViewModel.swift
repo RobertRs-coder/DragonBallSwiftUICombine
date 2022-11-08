@@ -14,9 +14,9 @@ final class DevelopersViewModel: ObservableObject{
     
     var subscribers = Set<AnyCancellable>()
     
-    init(testing: Bool = false){
+    init(testing: Bool = false, bootcamps: [Bootcamp] = []){
         if testing{
-            getDevelopersTesting()
+            getDevelopersTesting(bootcamps: bootcamps)
         } else{
             getDevelopers()
         }
@@ -68,9 +68,9 @@ final class DevelopersViewModel: ObservableObject{
     }
     
     //Design & Testing
-    func getDevelopersTesting(){
-        let b1 = Bootcamp(id: UUID().uuidString, name: "Bootcamp Mobile 14")
-        let b2 = Bootcamp(id: UUID().uuidString, name: "Bootcamp Mobile 15")
+    func getDevelopersTesting(bootcamps: [Bootcamp]){
+        let b1 = Bootcamp(id: bootcamps[0].id, name: bootcamps[0].name)
+        let b2 = Bootcamp(id: bootcamps[1].id, name: bootcamps[1].name)
         
         let dev1 = Developer(bootcamp: b1, id: "100", apell1: "Bustos", apell2: "Esteban", email: "", name: "Jose Luis", photo: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/gzZpBDV3nX1AWytfLhbgs/d528553697d959544c8ca5b80b6d8beb/web_developer.png?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=", heroes: [])
         
