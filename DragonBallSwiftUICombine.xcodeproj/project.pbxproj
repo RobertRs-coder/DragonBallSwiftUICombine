@@ -46,6 +46,9 @@
 		235A962F2919799E009D10E0 /* DevelopersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A962E2919799E009D10E0 /* DevelopersViewModel.swift */; };
 		235A96302919799E009D10E0 /* DevelopersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A962E2919799E009D10E0 /* DevelopersViewModel.swift */; };
 		235A96312919799E009D10E0 /* DevelopersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235A962E2919799E009D10E0 /* DevelopersViewModel.swift */; };
+		2373E6C0291AC82E0045771C /* DevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2373E6BF291AC82E0045771C /* DevelopersView.swift */; };
+		2373E6C1291AC82E0045771C /* DevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2373E6BF291AC82E0045771C /* DevelopersView.swift */; };
+		2373E6C2291AC82E0045771C /* DevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2373E6BF291AC82E0045771C /* DevelopersView.swift */; };
 		237589762915411700E1C2DE /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589752915411700E1C2DE /* StatusModel.swift */; };
 		237589782915414800E1C2DE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237589772915414800E1C2DE /* RootViewModel.swift */; };
 		2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
@@ -105,6 +108,7 @@
 		232BBB672916F1730081BB54 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		235A962A2919735A009D10E0 /* DeveloperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModel.swift; sourceTree = "<group>"; };
 		235A962E2919799E009D10E0 /* DevelopersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewModel.swift; sourceTree = "<group>"; };
+		2373E6BF291AC82E0045771C /* DevelopersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersView.swift; sourceTree = "<group>"; };
 		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
@@ -403,6 +407,7 @@
 		235A962829197320009D10E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2373E6BF291AC82E0045771C /* DevelopersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 				232BBB622916F0450081BB54 /* HomeView.swift in Sources */,
 				2325E0AA291198BE002BF195 /* Persistence.swift in Sources */,
 				23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */,
+				2373E6C0291AC82E0045771C /* DevelopersView.swift in Sources */,
 				232AE1152918892400C7974D /* LocalDataModel.swift in Sources */,
 				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
@@ -601,6 +607,7 @@
 				232AE112291881E900C7974D /* HeroesRowView.swift in Sources */,
 				2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				23E918802916D2290042DA84 /* ErrorView.swift in Sources */,
+				2373E6C1291AC82E0045771C /* DevelopersView.swift in Sources */,
 				235A96302919799E009D10E0 /* DevelopersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,6 +619,7 @@
 				23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				232AE113291881E900C7974D /* HeroesRowView.swift in Sources */,
+				2373E6C2291AC82E0045771C /* DevelopersView.swift in Sources */,
 				230DEFF92912969900983CA2 /* Keychain.swift in Sources */,
 				2325E0C9291198BF002BF195 /* DragonBallSwiftUICombineUITests.swift in Sources */,
 				232AE1172918892400C7974D /* LocalDataModel.swift in Sources */,

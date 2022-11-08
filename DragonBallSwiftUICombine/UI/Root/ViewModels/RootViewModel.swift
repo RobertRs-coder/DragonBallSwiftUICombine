@@ -13,8 +13,9 @@ public let CONST_TOKEN_ID = "tokenJWTKeychain"
 final class RootViewModel: ObservableObject{
     //MARK: Published variables
     @Published var status = Status.login
+    @Published var bootcamps: [Bootcamp]?
     private var subscribers = Set<AnyCancellable>()
-    private var bootcamps: [Bootcamp]?
+    
     
     /*
     @Published var tokenJWT: String = "" {
