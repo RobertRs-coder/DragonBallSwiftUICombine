@@ -29,11 +29,15 @@ final class RootViewModel: ObservableObject{
     @PersistenceKeychain(key: CONST_TOKEN_ID)
     var tokenJWT
     
-    init() {
-        //Load bootcamp list
-        self.loadBootcamps()
+    init(testing: Bool = false) {
         //Token control
         self.loggedUserControl()
+        if !testing{
+            //Load bootcamp list
+            self.loadBootcamps()
+        } else{
+            //Deafult bootcamps
+        }
     }
     /*
     func loggedUserControl() {
@@ -95,7 +99,7 @@ final class RootViewModel: ObservableObject{
             }
             .store(in: &subscribers)
     }
-    
+    //MARK: Bootcamps functions
     //Load bootcamp from server
     func loadBootcamps() {
         URLSession.shared
@@ -105,7 +109,6 @@ final class RootViewModel: ObservableObject{
                       response.statusCode == 200 else {
                     throw URLError(.badServerResponse)
                 }
-                //Return the string because it's the token
                 return $0.data
             }
             .decode(type: [Bootcamp].self, decoder: JSONDecoder())
@@ -113,13 +116,19 @@ final class RootViewModel: ObservableObject{
             .sink { completion in
                 switch completion {
                 case .failure(let error):
-                    self.status = .error(error: String(describing: error))
+                    print("Error: \(error)")
                 case .finished:
-                    self.status = .home // Login Success
+                    print("Success")
                 }
             } receiveValue: { data in
                 self.bootcamps = data
             }
             .store(in: &subscribers)
+    }
+    
+    func loadBootcampsTesting(){
+        let b1 = Bootcamp(id: UUID().uuidString, name: "Bootcamp Mobile 14")
+        let b2 = Bootcamp(id: UUID().uuidString, name: "Bootcamp Mobile 15")
+        self.bootcamps = [b1, b2]
     }
 }
