@@ -54,6 +54,9 @@
 		2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
 		2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
 		2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2375897A2915424300E1C2DE /* BaseNetwork.swift */; };
+		2380AEEE291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
+		2380AEEF291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
+		2380AEF0291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
 		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
@@ -112,6 +115,7 @@
 		237589752915411700E1C2DE /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		2380AEED291BE746007F5C16 /* DevelopersRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersRowView.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		23E9187E2916D2290042DA84 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -408,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				2373E6BF291AC82E0045771C /* DevelopersView.swift */,
+				2380AEED291BE746007F5C16 /* DevelopersRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -576,6 +581,7 @@
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
 				23E9187F2916D2290042DA84 /* ErrorView.swift in Sources */,
+				2380AEEE291BE746007F5C16 /* DevelopersRowView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 				232AE10B2918358A00C7974D /* HeroesViewModel.swift in Sources */,
 				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
@@ -608,6 +614,7 @@
 				2375897C2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				23E918802916D2290042DA84 /* ErrorView.swift in Sources */,
 				2373E6C1291AC82E0045771C /* DevelopersView.swift in Sources */,
+				2380AEEF291BE746007F5C16 /* DevelopersRowView.swift in Sources */,
 				235A96302919799E009D10E0 /* DevelopersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +633,7 @@
 				2375897D2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				23E918792916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				235A962D2919735A009D10E0 /* DeveloperModel.swift in Sources */,
+				2380AEF0291BE746007F5C16 /* DevelopersRowView.swift in Sources */,
 				2317EF4029196AC90037F8F5 /* HeroesDetailView.swift in Sources */,
 				232AE10F2918376000C7974D /* HeroesView.swift in Sources */,
 				235A96312919799E009D10E0 /* DevelopersViewModel.swift in Sources */,

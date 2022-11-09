@@ -34,7 +34,8 @@ struct DevelopersView: View {
                                 //Content
                                 HStack{
                                     ForEach(dataFilter) { filter in
-                                        Text(filter.name)
+                                        DevelopersRowView(data: filter)
+//                                        Text(filter.name)
                                     }
                                 }
                             }
