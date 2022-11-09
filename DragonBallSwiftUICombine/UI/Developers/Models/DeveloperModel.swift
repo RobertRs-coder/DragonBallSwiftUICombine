@@ -12,7 +12,7 @@ struct Developer: Codable, Identifiable {
     let id, apell1, apell2, email: String
     let name: String
     let photo: String
-    var heros: [Hero] //liked heroes from developer
+    let heros: [Hero] //liked heroes from developer
     
 //    //I can't do it -> I don't know why??
 //    private enum CodinKeys: String, CodingKey, [Hero]{
@@ -27,6 +27,8 @@ struct Bootcamp: Codable, Identifiable {
 }
 
 
+
+// //Example CodinKey Protocol
 //struct Address : Codable {
 //
 //    var street: String

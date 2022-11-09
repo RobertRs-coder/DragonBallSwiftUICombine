@@ -61,7 +61,7 @@ final class DevelopersViewModel: ObservableObject{
             .store(in: &subscribers)
     }
     
-    //Look for developers from bootcamp
+    //Look for developers of a particular bootcamp
     func getDevelopersOfBootcamp(id:String) -> [Developer]{
         return developers!
             .filter({$0.bootcamp.id == id})
