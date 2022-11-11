@@ -85,7 +85,7 @@ final class HeroesViewModel: ObservableObject {
             .store(in: &subscribers)
     }
     
-    //Design & Testing
+    //Testing heroes
     func getHeroesTesting() {
         //Create array of 4 heroes
         let hero1 = Hero(
@@ -105,5 +105,25 @@ final class HeroesViewModel: ObservableObject {
         self.heroes = [hero1, hero2]
         //Change status to home
         self.status = .main
+    }
+    
+    //Testing favorite heroes
+    func getHeroesDesign() -> [Hero] {
+        //Create array of 4 heroes
+        let hero1 = Hero(
+            id: UUID(),
+            name: "Goku",
+            description: "Sobran las presentaciones cuando se habla de Goku.",
+            photo: "https://cdn.alfabetajuega.com/alfabetajuega/2020/12/goku1.jpg?width=300",
+            favorite: true
+        )
+        let hero2 = Hero(
+            id: UUID(),
+            name: "Vegeta",
+            description: "Vegeta es todo lo contrario.",
+            photo: "https://cdn.alfabetajuega.com/alfabetajuega/2020/12/vegetita.jpg?width=300",
+            favorite: false
+        )
+        return [hero1, hero2]
     }
 }

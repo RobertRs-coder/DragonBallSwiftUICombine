@@ -16,6 +16,9 @@
 		230DEFFB29129FAD00983CA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFFA29129FAD00983CA2 /* LoginView.swift */; };
 		230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFFA29129FAD00983CA2 /* LoginView.swift */; };
 		230DEFFD29129FAD00983CA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DEFFA29129FAD00983CA2 /* LoginView.swift */; };
+		231766CD291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */; };
+		231766CE291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */; };
+		231766CF291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */; };
 		2317EF3E29196AC90037F8F5 /* HeroesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317EF3D29196AC90037F8F5 /* HeroesDetailView.swift */; };
 		2317EF3F29196AC90037F8F5 /* HeroesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317EF3D29196AC90037F8F5 /* HeroesDetailView.swift */; };
 		2317EF4029196AC90037F8F5 /* HeroesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317EF3D29196AC90037F8F5 /* HeroesDetailView.swift */; };
@@ -89,6 +92,7 @@
 		230DEFF62912969900983CA2 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		230DEFFA29129FAD00983CA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		230DEFFF2912BBCF00983CA2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeroesView.swift; sourceTree = "<group>"; };
 		2317EF3D29196AC90037F8F5 /* HeroesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailView.swift; sourceTree = "<group>"; };
 		2325E0A4291198BE002BF195 /* DragonBallSwiftUICombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallSwiftUICombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2325E0A7291198BE002BF195 /* DragonBallSwiftUICombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineApp.swift; sourceTree = "<group>"; };
@@ -413,6 +417,7 @@
 			children = (
 				2373E6BF291AC82E0045771C /* DevelopersView.swift */,
 				2380AEED291BE746007F5C16 /* DevelopersRowView.swift */,
+				231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -570,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231766CD291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */,
 				230DEFFB29129FAD00983CA2 /* LoginView.swift in Sources */,
 				2325E0A8291198BE002BF195 /* DragonBallSwiftUICombineApp.swift in Sources */,
 				232BBB622916F0450081BB54 /* MainView.swift in Sources */,
@@ -605,6 +611,7 @@
 				235A962C2919735A009D10E0 /* DeveloperModel.swift in Sources */,
 				23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230A473B29119CC3007C726D /* RootView.swift in Sources */,
+				231766CE291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 				230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */,
 				230DEFF82912969900983CA2 /* Keychain.swift in Sources */,
@@ -623,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231766CF291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */,
 				23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				232AE113291881E900C7974D /* HeroesRowView.swift in Sources */,
