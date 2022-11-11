@@ -15,7 +15,7 @@ struct FavoritesHeroesView: View {
         ScrollView{
             VStack(alignment: .center){
                 ForEach(data.heroes){ hero in
-                    Text(hero.name)
+                    FavoritesHeroesRowView(hero: hero)
                 }
                 Button {
                     //Close

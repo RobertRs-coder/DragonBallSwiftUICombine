@@ -60,6 +60,9 @@
 		2380AEEE291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
 		2380AEEF291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
 		2380AEF0291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
+		23D27AB5291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */; };
+		23D27AB6291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */; };
+		23D27AB7291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */; };
 		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
@@ -120,6 +123,7 @@
 		237589772915414800E1C2DE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		2375897A2915424300E1C2DE /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		2380AEED291BE746007F5C16 /* DevelopersRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersRowView.swift; sourceTree = "<group>"; };
+		23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeroesRowView.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		23E9187E2916D2290042DA84 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -418,6 +422,7 @@
 				2373E6BF291AC82E0045771C /* DevelopersView.swift */,
 				2380AEED291BE746007F5C16 /* DevelopersRowView.swift */,
 				231766CC291DD6C000A18F80 /* FavoritesHeroesView.swift */,
+				23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -583,6 +588,7 @@
 				23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				2373E6C0291AC82E0045771C /* DevelopersView.swift in Sources */,
 				232AE1152918892400C7974D /* LocalDataModel.swift in Sources */,
+				23D27AB5291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */,
 				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
 				237589762915411700E1C2DE /* StatusModel.swift in Sources */,
 				2325E0AF291198BE002BF195 /* RootView.swift in Sources */,
@@ -611,6 +617,7 @@
 				235A962C2919735A009D10E0 /* DeveloperModel.swift in Sources */,
 				23E918732916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230A473B29119CC3007C726D /* RootView.swift in Sources */,
+				23D27AB6291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */,
 				231766CE291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */,
 				2325E0BF291198BF002BF195 /* DragonBallSwiftUICombineTests.swift in Sources */,
 				230DEFFC29129FAD00983CA2 /* LoginView.swift in Sources */,
@@ -631,6 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231766CF291DD6C000A18F80 /* FavoritesHeroesView.swift in Sources */,
+				23D27AB7291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */,
 				23E918742916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				2325E0CB291198BF002BF195 /* DragonBallSwiftUICombineUITestsLaunchTests.swift in Sources */,
 				232AE113291881E900C7974D /* HeroesRowView.swift in Sources */,
