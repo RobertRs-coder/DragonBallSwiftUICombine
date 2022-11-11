@@ -53,7 +53,7 @@ final class DevelopersViewModel: ObservableObject{
                     self.status = .error(error: String(describing: error))
                 case .finished:
                     print("Success")
-                    self.status = .home
+                    self.status = .main
                 }
             } receiveValue: { data in
                 self.developers = data
