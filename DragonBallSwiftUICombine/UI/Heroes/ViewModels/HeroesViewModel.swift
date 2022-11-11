@@ -51,7 +51,7 @@ final class HeroesViewModel: ObservableObject {
                     self.status = .error(error: String(describing: error))
                 case .finished:
                     print("Success")
-                    self.status = .home
+                    self.status = .main
                 }
             } receiveValue: { data in
                 self.heroes = data
@@ -78,6 +78,6 @@ final class HeroesViewModel: ObservableObject {
         )
         self.heroes = [hero1, hero2]
         //Change status to home
-        self.status = .home
+        self.status = .main
     }
 }

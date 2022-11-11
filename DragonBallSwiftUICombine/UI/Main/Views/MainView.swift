@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  MainView.swift
 //  DragonBallSwiftUICombine
 //
 //  Created by Roberto Rojo Sahuquillo on 5/11/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct MainView: View {
     var body: some View {
         TabView{
            HeroesView(viewModel: HeroesViewModel())
@@ -26,8 +26,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        MainView()
     }
 }

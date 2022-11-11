@@ -19,8 +19,8 @@ struct RootView: View {
             LoadingView()
         case .error(error: let errorString):
             ErrorView(error: errorString)
-        case .home:
-            HomeView()
+        case .main:
+            MainView()
         }
     }
 }

@@ -64,7 +64,7 @@ final class RootViewModel: ObservableObject{
             Keychain.deleteKeychain(key: CONST_TOKEN_ID)
             return
         }
-        self.status = .home
+        self.status = .main
     }
     
     func closeSession(){
@@ -92,7 +92,7 @@ final class RootViewModel: ObservableObject{
                 case .failure(let error):
                     self.status = .error(error: String(describing: error))
                 case .finished:
-                    self.status = .home // Login Success
+                    self.status = .main // Login Success
                 }
             } receiveValue: { token in
                 self.tokenJWT = token
