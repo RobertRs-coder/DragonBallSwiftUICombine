@@ -21,6 +21,7 @@ enum endpoint: String {
     case heroList = "/api/heros/all"
     case developerList = "/api/data/developers"
     case bootcampList = "/api/data/bootcamps" //Not security
+    case like = "/api/data/herolike"
 }
 //Use this to call server
 struct BaseNetwork {
@@ -52,7 +53,7 @@ struct BaseNetwork {
         request.httpMethod = HTTPMethod.post
         
         //Request json body
-        request.httpBody = try? JSONEncoder().encode(HeroFilter(name: filter))
+        request.httpBody = try? JSONEncoder().encode(HeroFilterRequest(name: filter))
         //Request header
         request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
         
@@ -95,6 +96,27 @@ struct BaseNetwork {
 
         //Request header
         request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
+        
+        return request
+    }
+    //request like hero
+    func getSessionLike(idHero: String) -> URLRequest {
+        let url = URL(string: "\(server)\(endpoint.like.rawValue)")
+        
+        //Create request from url
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.post
+        
+        //Request json body
+        request.httpBody = try? JSONEncoder().encode(HeroLikeRequest(hero: idHero))
+        //Request header
+        request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
+        
+        //Security
+        let token = Keychain.loadKeychain(key: CONST_TOKEN_ID)
+        if let tokenJWT = token{
+            request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization")
+        }
         
         return request
     }

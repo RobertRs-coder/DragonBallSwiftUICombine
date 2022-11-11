@@ -19,13 +19,13 @@ struct Hero: Codable, Identifiable{
 }
 
 //To filter server
-struct HeroFilter: Codable{
+struct HeroFilterRequest: Codable{
     var name: String
 }
 
 
 //For request  hero likie
 
-struct HeroLikeRequest{
+struct HeroLikeRequest: Codable{
     var hero: String
 }

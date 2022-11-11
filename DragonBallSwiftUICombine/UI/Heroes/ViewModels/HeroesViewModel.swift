@@ -59,6 +59,32 @@ final class HeroesViewModel: ObservableObject {
             .store(in: &subscribers)
     }
     
+    //Function to check heroe like it
+    func callToLike(idHero: String) {
+        //Delete all subscribers to clean memory
+        cancelAll()
+        self.status = .loading
+        URLSession.shared
+            .dataTaskPublisher(for: BaseNetwork().getSessionLike(idHero: idHero))
+            .tryMap {
+                guard let response = $0.response as? HTTPURLResponse,
+                      response.statusCode == 201 else{
+                    throw URLError(.badServerResponse)
+                }
+                return $0.data
+            }
+            .decode(type: String.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .replaceError(with: "Error")
+            .sink { data in
+                //Change favourite in memory
+                if let offset = self.heroes!.firstIndex(where: { $0.id.uuidString == idHero}){
+                    self.heroes![offset].favorite!.toggle()
+                }
+            }
+            .store(in: &subscribers)
+    }
+    
     //Design & Testing
     func getHeroesTesting() {
         //Create array of 4 heroes

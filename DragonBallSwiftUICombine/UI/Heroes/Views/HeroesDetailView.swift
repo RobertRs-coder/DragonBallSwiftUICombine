@@ -24,7 +24,8 @@ struct HeroesDetailView: View {
 //                        .padding([.top, .leading], 10)
                     Spacer()
                     Button {
-                        //TODO: Call like it function
+                        //Call like it function
+                        viewModel.callToLike(idHero: hero.id.uuidString)
                     } label: {
 //                        if hero.favorite ?? false {
 //                            Image(systemName: "heart.circle")

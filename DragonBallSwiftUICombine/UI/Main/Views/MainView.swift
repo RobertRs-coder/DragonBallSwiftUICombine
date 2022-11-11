@@ -21,7 +21,7 @@ struct MainView: View {
                  Text("Developers")
              }
         }
-//        .accentColor(.orange) < iOS16
+//        .accentColor(.orange) //< iOS16
         .tint(.orange)
     }
 }
