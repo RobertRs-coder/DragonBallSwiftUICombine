@@ -191,12 +191,12 @@
 		230A472E29119A8A007C726D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				235A962629197315009D10E0 /* Developers */,
 				230A473329119AE8007C726D /* Root */,
 				23E918752916CCFD0042DA84 /* Common */,
 				230A472F29119A8E007C726D /* Login */,
 				232BBB5F2916F0200081BB54 /* Main */,
 				232BBB692916F6380081BB54 /* Heroes */,
+				235A962629197315009D10E0 /* Developers */,
 			);
 			path = UI;
 			sourceTree = "<group>";

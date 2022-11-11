@@ -20,13 +20,29 @@ final class DevelopersViewModel: ObservableObject{
         } else{
             getDevelopers()
         }
+        //Notification Center subscriber
+        NotificationCenter.default
+            .publisher(for: .notificationReloadDevelopers)
+            .map{
+                $0.object as? String
+            }
+            .replaceError(with: "Error")
+            .replaceNil(with: "Nil")
+            .replaceEmpty(with: "Empty")
+            .sink { _ in
+                //Reload developers from server
+                self.getDevelopers()
+            }
+            .store(in: &subscribers)
     }
+    
     //Cancel all subcribers
     func cancelAll(){
         subscribers.forEach { AnyCancellable in
             AnyCancellable.cancel()
         }
     }
+    
     //Function to get developers from server using Combine
     func getDevelopers() {
         //Delete all subscribers to clean memory

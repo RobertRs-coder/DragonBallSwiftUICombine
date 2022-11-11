@@ -81,6 +81,8 @@ final class HeroesViewModel: ObservableObject {
                 if let offset = self.heroes!.firstIndex(where: { $0.id.uuidString == idHero}){
                     self.heroes![offset].favorite!.toggle()
                 }
+                //Call Notification Center to reload developers
+                NotificationCenter.default.post(name: .notificationReloadDevelopers, object: "Developer's hero changed")
             }
             .store(in: &subscribers)
     }
