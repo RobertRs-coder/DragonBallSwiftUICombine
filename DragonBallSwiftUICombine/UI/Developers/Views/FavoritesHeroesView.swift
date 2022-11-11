@@ -18,7 +18,7 @@ struct FavoritesHeroesView: View {
                     FavoritesHeroesRowView(hero: hero)
                 }
                 Button {
-                    //Close
+                    //Close modal
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Exit")

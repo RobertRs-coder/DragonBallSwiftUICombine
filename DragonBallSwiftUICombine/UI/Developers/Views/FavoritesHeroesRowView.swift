@@ -34,7 +34,6 @@ struct FavoritesHeroesRowView: View {
             Spacer()
         }
         .padding()
-        
     }
 }
 
