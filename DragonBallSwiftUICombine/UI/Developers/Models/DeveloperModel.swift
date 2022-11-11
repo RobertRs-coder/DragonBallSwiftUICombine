@@ -7,17 +7,18 @@
 
 import Foundation
 
-struct Developer: Codable, Identifiable {
+struct Developer: Codable, Identifiable{
     let bootcamp: Bootcamp
     let id, apell1, apell2, email: String
     let name: String
     let photo: String
-    let heros: [Hero] //liked heroes from developer
+    let heroes: [Hero] //liked heroes from developer
     
-//    //I can't do it -> I don't know why??
-//    private enum CodinKeys: String, CodingKey, [Hero]{
-//        case heroes = "heros"
-//    }
+    //Change name of the codable protocol
+    private enum CodingKeys: String, CodingKey{
+        // All your properties should be included
+        case bootcamp, id, apell1, apell2, email, name, photo, heroes = "heros"
+    }
     
 }
 

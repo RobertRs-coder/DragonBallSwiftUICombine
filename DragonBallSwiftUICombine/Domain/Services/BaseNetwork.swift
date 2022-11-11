@@ -99,6 +99,3 @@ struct BaseNetwork {
         return request
     }
 }
-
-
-
