@@ -16,7 +16,7 @@ struct Developer: Codable, Identifiable{
     
     //Change name of the codable protocol
     private enum CodingKeys: String, CodingKey{
-        // All your properties should be included
+        // All the properties should be included if not ... need it special init()
         case bootcamp, id, apell1, apell2, email, name, photo, heroes = "heros"
     }
     
