@@ -5,7 +5,17 @@
 //  Created by Roberto Rojo Sahuquillo on 12/11/22.
 //
 
+import SwiftUI
+import Combine
+import ViewInspector
+
+@testable import DragonBallSwiftUICombine
+
 import XCTest
+
+//View to test
+extension LoginView: Inspectable{}
+
 
 final class DragonBallSwiftUICombineTests: XCTestCase {
 
@@ -17,7 +27,7 @@ final class DragonBallSwiftUICombineTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testLoginView() throws {
        XCTAssertEqual("1", "1")
     }
 
