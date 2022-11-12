@@ -13,7 +13,7 @@ struct HeroesView: View {
     @State private var filter: String = ""
     
     var body: some View {
-        //NavigationView <iOS 16
+        //NavigationView <iOS 16 & Automatic iPadOS SplitView
         NavigationStack{
             List{
                 if let heroes = viewModel.heroes{
