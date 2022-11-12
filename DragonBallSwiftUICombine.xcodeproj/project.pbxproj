@@ -34,6 +34,8 @@
 		2380AEEE291BE746007F5C16 /* DevelopersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380AEED291BE746007F5C16 /* DevelopersRowView.swift */; };
 		23C72EEB291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EEA291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift */; };
 		23C72EF3291FCE810003228F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 23C72EF2291FCE810003228F /* ViewInspector */; };
+		23C72EF5292013D60003228F /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EF4292013D60003228F /* RegisterModel.swift */; };
+		23C72EF6292013D60003228F /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EF4292013D60003228F /* RegisterModel.swift */; };
 		23D27AB5291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */; };
 		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
@@ -80,6 +82,7 @@
 		2380AEED291BE746007F5C16 /* DevelopersRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersRowView.swift; sourceTree = "<group>"; };
 		23C72EE8291FCBEA0003228F /* DragonBallSwiftUICombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallSwiftUICombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C72EEA291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineTests.swift; sourceTree = "<group>"; };
+		23C72EF4292013D60003228F /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeroesRowView.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 			children = (
 				237589752915411700E1C2DE /* StatusModel.swift */,
 				232AE1142918892400C7974D /* LocalDataModel.swift */,
+				23C72EF4292013D60003228F /* RegisterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -504,6 +508,7 @@
 				2380AEEE291BE746007F5C16 /* DevelopersRowView.swift in Sources */,
 				2325E0AD291198BE002BF195 /* DragonBallSwiftUICombine.xcdatamodeld in Sources */,
 				232AE10B2918358A00C7974D /* HeroesViewModel.swift in Sources */,
+				23C72EF5292013D60003228F /* RegisterModel.swift in Sources */,
 				237589782915414800E1C2DE /* RootViewModel.swift in Sources */,
 				232AE10D2918376000C7974D /* HeroesView.swift in Sources */,
 				23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
@@ -520,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C72EF6292013D60003228F /* RegisterModel.swift in Sources */,
 				23C72EEB291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

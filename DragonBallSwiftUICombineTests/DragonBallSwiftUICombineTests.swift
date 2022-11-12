@@ -54,7 +54,4 @@ final class DragonBallSwiftUICombineTests: XCTestCase {
         //
         XCTAssertEqual(rootViewModel.tokenJWT, "")
     }
-
-   
-
 }
