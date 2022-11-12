@@ -26,9 +26,33 @@ final class DragonBallSwiftUICombineTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testLoginView() throws {
-       XCTAssertEqual("1", "1")
+    
+    //Testing views
+    func testViews() throws {
+        let rootViewModel = RootViewModel()
+       let view = LoginView()
+            .environmentObject(rootViewModel)
+        
+        let numItems = try view.inspect().count
+        XCTAssertEqual(numItems, 1)  //one root view
+        
+        //Image
+        let image = try view.inspect().find(viewWithId: 1)
+        XCTAssertNotNil(image)
+        
+        //Text
+        let text = try view.inspect().find(viewWithId: 3)
+        XCTAssertNotNil(text)
+        let textString = try text.text().string()
+        XCTAssertEqual(textString, "Login")
+        
+        //Button
+        let button = try view.inspect().find(viewWithId: 2)
+        XCTAssertNotNil(button)
+        try button.button().tap() //Execute button
+        
+        //
+        XCTAssertEqual(rootViewModel.tokenJWT, "")
     }
 
    

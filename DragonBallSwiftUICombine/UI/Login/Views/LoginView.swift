@@ -25,6 +25,7 @@ struct LoginView: View {
             Image(decorative: "backgroundLogin")
                 .resizable()
                 .opacity(1)
+                .id(1) //For testing
             
             Image(decorative: "")
                 .resizable()
@@ -82,7 +83,9 @@ struct LoginView: View {
                         .background(Color(uiColor: UIColor(red: 221.0/255.0, green: 99.0/255.0, blue: 0.0, alpha: 1.0)))
                         .cornerRadius(15)
                         .shadow(radius: 10.0, x: 20, y: 10)
+                        .id(3) //For testing
                 }
+                .id(2) //For testing
                 .padding(.top, 50)
                 .opacity(0.8)
                 .overlay(
