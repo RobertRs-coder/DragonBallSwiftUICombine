@@ -36,6 +36,10 @@
 		23C72EF3291FCE810003228F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 23C72EF2291FCE810003228F /* ViewInspector */; };
 		23C72EF5292013D60003228F /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EF4292013D60003228F /* RegisterModel.swift */; };
 		23C72EF6292013D60003228F /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EF4292013D60003228F /* RegisterModel.swift */; };
+		23C72EFB29201ABC0003228F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EFA29201ABC0003228F /* RegisterViewModel.swift */; };
+		23C72EFC29201ABC0003228F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72EFA29201ABC0003228F /* RegisterViewModel.swift */; };
+		23C72F0129201AE00003228F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72F0029201AE00003228F /* RegisterView.swift */; };
+		23C72F0229201AE00003228F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C72F0029201AE00003228F /* RegisterView.swift */; };
 		23D27AB5291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */; };
 		23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918712916C78A0042DA84 /* PropertyWrappers.swift */; };
 		23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E918762916CD0E0042DA84 /* LoadingView.swift */; };
@@ -83,6 +87,8 @@
 		23C72EE8291FCBEA0003228F /* DragonBallSwiftUICombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallSwiftUICombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C72EEA291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallSwiftUICombineTests.swift; sourceTree = "<group>"; };
 		23C72EF4292013D60003228F /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		23C72EFA29201ABC0003228F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		23C72F0029201AE00003228F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		23D27AB4291E8CD80016A1A8 /* FavoritesHeroesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesHeroesRowView.swift; sourceTree = "<group>"; };
 		23E918712916C78A0042DA84 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		23E918762916CD0E0042DA84 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 			children = (
 				230A473329119AE8007C726D /* Root */,
 				23E918752916CCFD0042DA84 /* Common */,
+				23C72EF729201A800003228F /* Register */,
 				230A472F29119A8E007C726D /* Login */,
 				232BBB5F2916F0200081BB54 /* Main */,
 				232BBB692916F6380081BB54 /* Heroes */,
@@ -372,6 +379,31 @@
 			path = DragonBallSwiftUICombineTests;
 			sourceTree = "<group>";
 		};
+		23C72EF729201A800003228F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				23C72EF829201A8C0003228F /* Views */,
+				23C72EF929201A990003228F /* ViewModels */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		23C72EF829201A8C0003228F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23C72F0029201AE00003228F /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23C72EF929201A990003228F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				23C72EFA29201ABC0003228F /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		23E918752916CCFD0042DA84 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +531,7 @@
 				23E918772916CD0E0042DA84 /* LoadingView.swift in Sources */,
 				2373E6C0291AC82E0045771C /* DevelopersView.swift in Sources */,
 				232AE1152918892400C7974D /* LocalDataModel.swift in Sources */,
+				23C72F0129201AE00003228F /* RegisterView.swift in Sources */,
 				23D27AB5291E8CD80016A1A8 /* FavoritesHeroesRowView.swift in Sources */,
 				23383E9F291EECF100FA4634 /* NotificationCenter+Extensions.swift in Sources */,
 				2375897B2915424300E1C2DE /* BaseNetwork.swift in Sources */,
@@ -514,6 +547,7 @@
 				23E918722916C78A0042DA84 /* PropertyWrappers.swift in Sources */,
 				230DEFF72912969900983CA2 /* Keychain.swift in Sources */,
 				232AE111291881E900C7974D /* HeroesRowView.swift in Sources */,
+				23C72EFB29201ABC0003228F /* RegisterViewModel.swift in Sources */,
 				2317EF3E29196AC90037F8F5 /* HeroesDetailView.swift in Sources */,
 				235A962B2919735A009D10E0 /* DeveloperModel.swift in Sources */,
 				232BBB682916F1730081BB54 /* HeroModel.swift in Sources */,
@@ -526,6 +560,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C72EF6292013D60003228F /* RegisterModel.swift in Sources */,
+				23C72F0229201AE00003228F /* RegisterView.swift in Sources */,
+				23C72EFC29201ABC0003228F /* RegisterViewModel.swift in Sources */,
 				23C72EEB291FCBEA0003228F /* DragonBallSwiftUICombineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

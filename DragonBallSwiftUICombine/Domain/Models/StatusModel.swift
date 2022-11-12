@@ -10,3 +10,8 @@ import Foundation
 enum Status {
     case login, loading, main, register, error(error: String)
 }
+
+//Register Status
+enum RegisterStatus {
+    case none, registering, registerSuccess, registerError
+}

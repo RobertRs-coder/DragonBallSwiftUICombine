@@ -22,9 +22,25 @@ enum endpoint: String {
     case developerList = "/api/data/developers"
     case bootcampList = "/api/data/bootcamps" //Not security
     case like = "/api/data/herolike"
+    case register = "/api/register/developer"
 }
-//Use this to call server
+//Use this to server calls
 struct BaseNetwork {
+    func getSessionRegisterUser(data: RegisterModel) -> URLRequest{
+        let url = URL(string: "\(server)\(endpoint.register.rawValue)")
+        
+        //Create request from url
+        var request = URLRequest(url: url!)
+        request.httpMethod = HTTPMethod.post
+        
+        //Request json body
+        request.httpBody = try? JSONEncoder().encode(data)
+        //Request header
+        request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
+
+        return request
+    }
+    
     func getSessionLogin(user: String, password: String) -> URLRequest {
         let url = URL(string: "\(server)\(endpoint.login.rawValue)")
         //Encode credentials
