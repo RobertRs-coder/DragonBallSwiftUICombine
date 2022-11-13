@@ -108,6 +108,7 @@ struct LoginView: View {
                     
                     Button {
                         //TODO: Register into RegisterView
+                        rootViewModel.status = .register
                     } label: {
                         Text("Register")
                             .foregroundColor(.blue)

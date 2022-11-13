@@ -14,7 +14,7 @@ struct RootView: View {
         case .login:
             LoginView()
         case .register:
-            Text("Register")
+            RegisterView()
         case .loading:
             LoadingView()
         case .error(error: let errorString):
