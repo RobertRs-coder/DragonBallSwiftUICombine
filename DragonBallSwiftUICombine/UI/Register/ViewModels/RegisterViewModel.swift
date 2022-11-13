@@ -8,7 +8,6 @@
 import Foundation
 import Combine
 
-
 final class RegisterViewModel: ObservableObject{
     @Published var status = RegisterStatus.none
     private var subscribers = Set<AnyCancellable>()

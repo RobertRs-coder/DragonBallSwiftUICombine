@@ -14,6 +14,7 @@ struct RegisterView: View {
     
     @State private var data = RegisterModel() //Datos formulario
     @State private var showAlert = false
+    @State private var textError = ""
     
     var body: some View {
         VStack{
@@ -51,8 +52,9 @@ struct RegisterView: View {
                                     Text(bootcamp.name)
                                         .foregroundColor(.orange)
                                 }
+                                //Just is Combine publisher
                                 .onReceive(Just($data.bootcamp)) { value in
-                                    //Receive value selected in the picker
+                                    //Receive the object selected in the picker
                                 }
                             } label: {
                                 Text("Bootcamps")
@@ -81,17 +83,53 @@ struct RegisterView: View {
                 }
                 .listRowBackground(Color.orange.opacity(0.5))
                 
-                //Register button
+                //Button to register
                 if viewModel.status != .registerSuccess {
-                    
+                    Section(""){
+                        Button {
+                            //Action register
+                            if !data.isValidPass(){
+                                textError = "The passwords aren't the same or the size is shorter than 6 characters"
+                                showAlert.toggle()
+                                return
+                            }
+                            if !data.validateMail(){
+                                textError = "Email format incorrect"
+                                showAlert.toggle()
+                                return
+                            }
+                            if data.allDataIsSuccess(){
+                                viewModel.registerUser(dataForm: data)
+                                rootViewModel.status = .login
+                            } else {
+                                textError = "The fields aren't correct, please fill all fields"
+                                showAlert.toggle()
+                            }
+                        } label: {
+                            Text("Register")
+                        }
+                    }
                 }
-                //Button return to Login
+                //Button to return to Login
                 Button {
-                    rootViewModel.status = .login
+                    rootViewModel.status = .login //Return to login
                 } label: {
                     Text("Return Login")
                 }
 
+            }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text(""), message: Text(textError), dismissButton: .default(Text("Ok")))
+        }
+        .onReceive(viewModel.$status) { _ in
+            if viewModel.status == .registerSuccess{
+                textError = "Success Register"
+                showAlert.toggle()
+                rootViewModel.status = .login
+            } else if viewModel.status == .registerError{
+                textError = "Error Register"
+                showAlert.toggle()
             }
         }
     }

@@ -107,7 +107,7 @@ struct LoginView: View {
                         .bold()
                     
                     Button {
-                        //TODO: Register into RegisterView
+                        //Register into RegisterView
                         rootViewModel.status = .register
                     } label: {
                         Text("Register")
