@@ -33,7 +33,7 @@ struct BaseNetwork {
         var request = URLRequest(url: url!)
         request.httpMethod = HTTPMethod.post
         
-        //Request json body
+        //Request JSON body
         request.httpBody = try? JSONEncoder().encode(data)
         //Request header
         request.addValue(HTTPMethod.content, forHTTPHeaderField: "Content-type")
